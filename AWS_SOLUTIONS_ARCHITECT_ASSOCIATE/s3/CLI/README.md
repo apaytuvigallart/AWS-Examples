@@ -1,7 +1,3 @@
-# Documentation
-- [AWS CLI s3api](https://docs.aws.amazon.com/cli/latest/reference/s3api/)
-- [AWS CLI s3](https://docs.aws.amazon.com/cli/latest/reference/s3/)
-
 # Commands
 
 ## Create Bucket
@@ -37,7 +33,7 @@ aws s3 cp s3://my-example-bucket-abc1/test/another.txt .
 ## Download multiple Objects
 
 ```
-aws s3 sync s3://my-example-bucket-abc1/test/ ./test 
+aws s3 sync s3://my-example-bucket-abc1/test/ ./test
 ```
 
 ## List Objects
