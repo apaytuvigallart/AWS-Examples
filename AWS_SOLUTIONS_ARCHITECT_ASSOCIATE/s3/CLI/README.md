@@ -1,10 +1,10 @@
 # Documentation
-[AWS CLI s3api](https://docs.aws.amazon.com/cli/latest/reference/s3api/)
-[AWS CLI s3](https://docs.aws.amazon.com/cli/latest/reference/s3/)
+- [AWS CLI s3api](https://docs.aws.amazon.com/cli/latest/reference/s3api/)
+- [AWS CLI s3](https://docs.aws.amazon.com/cli/latest/reference/s3/)
 
 # Commands
 
-## Create Bucket
+## Create Bucket
 
 ```
 aws s3api create-bucket --bucket my-example-bucket-abc1 --region us-east-1
