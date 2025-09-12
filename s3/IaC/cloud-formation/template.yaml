@@ -1,0 +1,8 @@
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-s3-bucket.html
+# aws cloudformation deploy --template-file create-bucket.yaml --stack-name test-cfn --region eu-west-2 to create the bucket
+# aws cloudformation delete-stack --stack-name test-cfn --region eu-west-2 to delete the stack and thus the stuff from the stack
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: my-cfn-bucket-123456
