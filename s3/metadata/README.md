@@ -1,4 +1,4 @@
-## Create bucket
+## Create bucket
 ```sh
 aws s3 mb s3://metadata-bucket-aleix-123
 ```
@@ -21,8 +21,13 @@ aws s3api head-object --bucket metadata-bucket-aleix-123 --key hello.txt
 ```
 
 > The output would be something like
+> ```
+> ...
 > "Metadata": {
 >   "key_1": "value_1",
 >   "key_2": "value_2"
 > }
+> ```
 > If we check the metadata in the UI, the keys start with `x-amz-meta-`
+> <img width="1840" height="454" alt="image" src="https://github.com/user-attachments/assets/bf1fea89-59b6-4d60-a243-12ec2f77b7e6" />
+
