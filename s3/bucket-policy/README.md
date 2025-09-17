@@ -1,4 +1,6 @@
-# Create bucket
+# Commands
+
+## Create bucket
 ```sh
 aws s3 mb s3://my-bucket-policy-bucket-apg
 ```
