@@ -1,3 +1,7 @@
+# Ingress vs Egress
+- Ingress helps to control traffic coming into the subnet (from outside to subnet). For example, allow HTTp from 0.0.0.0/0 (allows external clients reach resources in the subnet).
+- Egress helps to control traffic leaving the subnet (from subnet to outside). For example, allow HTTPS to 0.0.0.0/0 (allows instances in the subnet connect to the internet).
+
 # Commands
 
 ## Create NACL
