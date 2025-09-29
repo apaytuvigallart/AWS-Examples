@@ -1,3 +1,7 @@
+# Ingress vs Egress
+- Ingress helps to control what traffic can enter the instance. For example, allow SSH from 203.0.113.0/24
+- Egress helps to control what traffic the instance can send out. For example, allow all outbound
+
 # Commands
 
 ## Create SG
