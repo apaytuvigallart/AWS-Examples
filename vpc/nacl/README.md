@@ -24,10 +24,10 @@ aws ec2 describe-network-acls --filters "Name=vpc-id, Values=vpc-0f2fef01ca7e601
 ```
 
 ## Associate NACL to a Subnet
+Note that a Subnet can only be associated to one NACL
+
 ```sh
 aws ec2 replace-network-acl-association \
 --association-id aclassoc-0c9cb5ab0c9ca9104 \
 --network-acl-id acl-003552ddd688a26c9
 ```
-
-> Note that a Subnet can only be associated to one NACL
