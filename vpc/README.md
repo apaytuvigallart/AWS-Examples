@@ -4,6 +4,7 @@
 - [AWS CLI ec2 create-network-acl](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-network-acl.html)
 - [AWS CLI ec2 describe-network-acls](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-network-acls.html)
 - [AWS CLI ec2 create-security-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-security-group.html)
+- [AWS CLI ec2 allocate-address](https://docs.aws.amazon.com/cli/latest/reference/ec2/allocate-address.html)
 
 # Stateful vs Stateless
 ## Stateful
