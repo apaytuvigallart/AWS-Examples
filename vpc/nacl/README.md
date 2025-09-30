@@ -22,7 +22,7 @@ aws ec2 create-network-acl-entry \
 --rule-action allow
 ```
 
-## List VPC associaton IDs
+## List VPC associaton IDs
 ```sh
 aws ec2 describe-network-acls --filters "Name=vpc-id, Values=vpc-0fxxe"
 ```
