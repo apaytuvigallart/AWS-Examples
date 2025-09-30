@@ -28,7 +28,7 @@ Each rule in a stateless network ACL controls either inbound or outbound traffic
 In summary, stateful and stateless refer to the handling of network traffic in AWS VPC. Stateful security groups allow return traffic automatically, simplifying rule management, while stateless network ACLs require explicit rules for both inbound and outbound traffic. Understanding these concepts is essential for effectively securing and managing network traffic within your AWS VPC.
 
 # VPC Endpoints Configuration
-| Feature | Interface Endpoint | Gateway Endpoint | GWLB Endpoint |
+| Feature | [Interface Endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/create-interface-endpoint.html) | [Gateway Endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-endpoints.html) | [GWLB Endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/gateway-load-balancer-endpoints.html) |
 | ------- | ------------------ | ---------------- | ------------- |
 | Type | Elastic Network Interface (ENI) | Gateway with VPC | Type of Interface Endpoint |
 | Use Case | Private connection to AWS services, partner services and other VPCs without public IPs | Private connections to S3 and DynamoDB from VPC | Route traffic to third-party virtual appliances like firewalls in another VPC |
