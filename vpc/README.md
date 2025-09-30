@@ -18,9 +18,22 @@ Stateless network traffic handling is the default behavior of network ACLs in AW
 Each rule in a stateless network ACL controls either inbound or outbound traffic, and there is no automatic allowance of return traffic like in stateful security groups. With stateless network ACLs, you need to define both inbound and outbound rules to control the flow of traffic accurately.
 
 ## Key differences
-| Type | Simplicity | Level | Evaluation | Example |
-| ---- | ---------- | ----- | ---------- | ------- |
-| Stateful | It allows return traffic automatically. | Instance level | It evaluates rules first and the most permissive one is applied | Security Groups |
-| Stateless | It requires explicit rules for both inbound and outbound traffic | Subnet level | It processes rules in a sequential order based on a rule number, from lowest to highest | NACL |
+| Feature | Stateful | Stateless |
+| ------- | -------- | --------- |
+| Simplicity | It allows return traffic automatically | It requires explicit rules for both inbound and outbound traffic |
+| Level | Instance level | Subnet level |
+| Evaluation | It evaluates rules first and the most permissive one is applied | It processes rules in a sequential order based on a rule number, from lowest to highest |
+| Example | Security Groups | NACL |
 
 In summary, stateful and stateless refer to the handling of network traffic in AWS VPC. Stateful security groups allow return traffic automatically, simplifying rule management, while stateless network ACLs require explicit rules for both inbound and outbound traffic. Understanding these concepts is essential for effectively securing and managing network traffic within your AWS VPC.
+
+# VPC Endpoints Configuration
+| Feature | Interface Endpoint | Gateway Endpoint | GWLB Endpoint |
+| ------- | ------------------ | ---------------- | ------------- |
+| Type | Elastic Network Interface (ENI) | Gateway with VPC | Type of Interface Endpoint |
+| Use Case | Private connection to AWS services, partner services and other VPCs without public IPs | Private connections to S3 and DynamoDB from VPC | Route traffic to third-party virtual appliances like firewalls in another VPC |
+| Service Integration | AWS PrivateLink | S3 and DynamoDB | AWS PrivateLink with GWLB |
+| Supported Services | Many AWS Services | S3 and DynamoDB | Third-party virtual applications |
+| Pricing | - Per-hour when provisioned <br> - Data processed | Free | - Endpoint hours <br> - Data processed |
+| Routing Mechanism | DNS interception and routing | Route table entries for specific destinations | Integrates with GWLB |
+| Traffic Direction | Bidirectional | Unidirectional | Usually Unidirectional |
