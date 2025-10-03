@@ -7,6 +7,7 @@
 - [Access Instance Metadata for EC2 Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
 - [Use Instance Metadata Service to access Instance Metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html)
 - [EC2 Instance Type Naming Conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
+- [AWS CLI ec2 get-console-screenshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-console-screenshot.html)
 
 # Instance Types
 Amazon EC2 provides a variety of instance types so we can choose the type that best meets your requirements. Instance types are named based on their instance family and instance size. 
