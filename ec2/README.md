@@ -8,6 +8,7 @@
 - [Use Instance Metadata Service to access Instance Metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html)
 - [EC2 Instance Type Naming Conventions](https://docs.aws.amazon.com/ec2/latest/instancetypes/instance-type-names.html)
 - [AWS CLI ec2 get-console-screenshot](https://docs.aws.amazon.com/cli/latest/reference/ec2/get-console-screenshot.html)
+- [Default Users](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html#ami-default-user-names)
 
 # Instance Types
 Amazon EC2 provides a variety of instance types so we can choose the type that best meets your requirements. Instance types are named based on their instance family and instance size. 
@@ -16,3 +17,19 @@ Amazon EC2 provides a variety of instance types so we can choose the type that b
 - The third position indicates the options, for example `gn`. After the period (`.`) is the instance size, such as `small` or `4xlarge`, or `metal` for bare metal instances.
 
 <img width="1592" height="864" alt="image" src="https://github.com/user-attachments/assets/fee1cdd6-4977-41f9-9610-5f1cf9f7cad6" />
+
+# Default Users
+Each Linux instance launches with a default Linux system user. You can add users to your instance and delete users. The default user is determined by the AMI that was specified when you launched the instance.
+
+| AMI | Default User |
+| --- | ------------ |
+| Amazon Linux | `ec2-user` |
+| CentOS | `centos` or `ec2-user` |
+| Debian | `admin` |
+| Fedora | `fedora` or `ec2-user` |
+| FreeBSD | `ec2-user` |
+| RHEL | `root` or `ec2-user` |
+| SUSE | `root` or `ec2-user` |
+| Ubuntu | `ubuntu` |
+| Oracle | `ec2-user` |
+| Bitnami | `bitnami` |
