@@ -33,3 +33,13 @@ Each Linux instance launches with a default Linux system user. You can add users
 | Ubuntu | `ubuntu` |
 | Oracle | `ec2-user` |
 | Bitnami | `bitnami` |
+
+# Pricing Models
+
+| Pricing Model | Explanation | When to Use | Example |
+| ------------- | ----------- | ----------- | ------- |
+| **On-Demand Instances** | Pay per second/minute for compute capacity with no upfront commitment. | Best for short-term, unpredictable workloads or testing. | Running a dev/test environment or handling sudden traffic spikes. |
+| **Reserved Instances (RI)** | Commit to a 1-year or 3-year term for significant savings (up to ~75%) compared to On-Demand. Options: Standard RI, Convertible RI, Scheduled RI. | Steady-state workloads with predictable usage. | Running production web servers continuously. |
+| **Savings Plans** | Flexible alternative to RIs — commit to a consistent spend ($/hour) for 1 or 3 years in exchange for savings, across instance families, regions, or even Fargate/Lambda. | When you want cost savings but with flexibility in instance type/region. | Committing to $500/month of compute usage while workloads evolve. |
+| **Spot Instances** | Bid for unused EC2 capacity at discounts up to 90%, but instances can be interrupted with short notice. | For fault-tolerant, flexible, or stateless workloads. | Big data analytics, rendering jobs, CI/CD pipelines. |
+| **Dedicated Hosts / Instances** | Physical servers dedicated to a single customer, with visibility/control over sockets/cores. Often needed for licensing or compliance. | When you must use per-socket/per-core software licenses (e.g., Oracle, Windows Server) or meet strict compliance. | Running a database that requires license compliance or isolation. |
