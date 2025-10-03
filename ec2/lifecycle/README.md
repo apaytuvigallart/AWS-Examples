@@ -21,7 +21,7 @@
 
 # Commands
 
-## Change Termination Protection
+## Change Termination Protection
 Prevent the instance from being terminated (Default is off)
 
 ```sh
