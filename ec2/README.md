@@ -43,3 +43,10 @@ Each Linux instance launches with a default Linux system user. You can add users
 | **Savings Plans** | Flexible alternative to RIs — commit to a consistent spend ($/hour) for 1 or 3 years in exchange for savings, across instance families, regions, or even Fargate/Lambda. | When you want cost savings but with flexibility in instance type/region. | Committing to $500/month of compute usage while workloads evolve. |
 | **Spot Instances** | Bid for unused EC2 capacity at discounts up to 90%, but instances can be interrupted with short notice. | For fault-tolerant, flexible, or stateless workloads. | Big data analytics, rendering jobs, CI/CD pipelines. |
 | **Dedicated Hosts / Instances** | Physical servers dedicated to a single customer, with visibility/control over sockets/cores. Often needed for licensing or compliance. | When you must use per-socket/per-core software licenses (e.g., Oracle, Windows Server) or meet strict compliance. | Running a database that requires license compliance or isolation. |
+
+In summary:
+- On-Demand: Pay-as-you-go, flexible.
+- Reserved: Predictable & steady usage.
+- Savings Plans: Flexible commitment with discounts.
+- Spot: Cheapest, but not guaranteed.
+- Dedicated: Compliance/licensing/isolation.
